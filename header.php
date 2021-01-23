@@ -14,19 +14,8 @@
     <body>
         <!--HEADER-->
         <header>
-            <?php include 'header.php' ?> 
+            <i class="fas fa-arrow-left"></i>
+            <img id="logo" src="./images/logo/ohmyfood@2x.svg" alt="logo">
         </header>
-        <!--NAV-->
-        <nav>
-            <i class="fas fa-map-marker-alt"></i>
-        </nav>
-        <!--MAIN-->
-        <main>
-
-        </main>
-        <!--FOOTER-->
-        <footer>
-
-        </footer>
     </body>
 </html>
