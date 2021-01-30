@@ -50,7 +50,7 @@
 }
 
 #gallery i {
-  font-size: 22px;
+  font-size: 30px;
 }
 
 footer icon1 {
@@ -92,6 +92,7 @@ footer a {
   color: #FFFFFF;
 }
 
+/*-------------------------heart-color-transition-------------------------------------------*/
 /*------------------------------accueil grid-------------------------*/
 .accueilgrid {
   display: -ms-grid;
@@ -292,6 +293,11 @@ footer a {
   margin: 20px 20px 60px 20px;
 }
 
+.accueilgrid main #gallery .menu {
+  display: -ms-grid;
+  display: grid;
+}
+
 .accueilgrid main #gallery .menu a {
   display: -ms-grid;
   display: grid;
@@ -347,7 +353,7 @@ footer a {
   padding: 5px 10px;
 }
 
-.accueilgrid main #gallery .menu a i {
+.accueilgrid main #gallery .menu a .heart {
   -ms-grid-column-align: self-end;
       justify-self: self-end;
   -ms-grid-column: 2;
@@ -357,6 +363,36 @@ footer a {
   -ms-grid-row-span: 1;
   grid-row: 2/3;
   margin: auto 15px;
+}
+
+.accueilgrid main #gallery .menu a .heart input {
+  display: none;
+}
+
+.accueilgrid main #gallery .menu a .heart input:checked + label {
+  -webkit-transition: all 0.8s 0s ease;
+  transition: all 0.8s 0s ease;
+  background-size: 100% 100%;
+  -webkit-text-stroke: 0px white;
+}
+
+.accueilgrid main #gallery .menu a .heart label {
+  -webkit-text-stroke: 0.7px black;
+  cursor: pointer;
+  font-size: 35px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  background: -webkit-linear-gradient(#9356DC, #FF79DA);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 100% 0%;
+  -webkit-transition: background-size .5s, color .5s;
+  transition: background-size .5s, color .5s;
+  /*&:hover
+                                @include hearttransition */
 }
 
 .accueilgrid footer {
@@ -592,6 +628,8 @@ footer a {
   color: #FFFFFF;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
+  -webkit-animation: roll-in-right 0.6s ease-out both;
+          animation: roll-in-right 0.6s ease-out both;
 }
 
 .menugrid nav {
