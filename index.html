@@ -12,6 +12,14 @@
         <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap" rel="stylesheet">
     </head>
     <body class="accueilgrid">
+        <div class="overlay">
+            <div class="overlay__wrapper">
+                <div class="overlay__spinner1"></div>
+                <div class="overlay__spinner2"></div>
+                <div class="overlay__spinner3"></div>
+                <img id="logospiner" src="./images/logo/ohmyfood@2x.svg" alt="logo">
+            </div>
+        </div>
         <!--HEADER-->
         <header>
             <img id="logo" src="./images/logo/ohmyfood@2x.svg" alt="logo">
@@ -33,19 +41,19 @@
             <h2>Fonctionnement</h2>
             <div id="functions">
                 <!--button 1-->
-                <div>
+                <div id="step1">
                     <p class="number">1</p>
                     <i class="fas fa-mobile-alt"></i>
                     <p>Choisisez un restaurant</p>
                 </div>
                 <!--button 2-->
-                <div>
+                <div id="step2">
                     <p class="number">2</p>
                     <i class="fas fa-list-ul"></i>
                     <p>Composez votre menu</p>
                 </div>
                 <!--button 3-->
-                <div>
+                <div id="step3">
                     <p class="number">3</p>
                     <i class="fas fa-store"></i>
                     <p>Dégustez au restaurant</p>

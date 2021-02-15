@@ -1,0 +1,121 @@
+/*---------------------------spiner-----------------------------------------*/
+.overlay 
+  position: fixed
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  animation: start 3s 
+
+  visibility: hidden
+  background: #f6f6f6
+  animation-timing-function: steps(1, end);
+
+
+
+@keyframes start 
+  from {visibility: visible}
+  to {visibility: hidden}
+    
+
+#logospiner
+    display: grid;
+    height: 16px
+    grid-column: 1/2
+    grid-row: 1/2
+    margin: auto
+
+.overlay__wrapper 
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: grid
+  justify-content: center
+  align-items: center
+    
+.overlay__spinner1 
+  grid-column: 1/2
+  grid-row: 1/2
+  transform: translate(-50px, 60px);
+  border: 10px solid transparent;
+  border-radius: 50%;
+  border-top: 10px solid $Secondaire;
+  width: 120px;
+  height: 120px;
+  animation: spin1 1s  infinite linear;
+  opacity: 90%;
+  transition: visibility 0s 6s
+  box-shadow: inset 0px 2px 5px 0px #CECECE
+  
+.overlay__spinner2 
+  grid-column: 1/2
+  grid-row: 1/2
+  transform: translate(-50px, 60px);
+  border: 10px solid transparent;
+  border-radius: 50%;
+  border-top: 10px solid $Primaire;
+  width: 120px;
+  height: 120px;
+  animation: spin1 2s  infinite linear;
+  opacity: 90%;
+  transition: visibility 0s 6s
+  box-shadow: inset 0px 2px 5px 0px #CECECE
+
+.overlay__spinner3 
+  grid-column: 1/2
+  grid-row: 1/2
+  transform: translate(-50px, 60px);
+  border: 10px solid transparent;
+  border-radius: 50%;
+  border-top: 10px solid $Tertiaire;
+  width: 120px;
+  height: 120px;
+  animation: spin1 3s  infinite linear;
+  opacity: 90%;
+  transition: visibility 0s 6s
+  box-shadow: inset 0px 2px 5px 0px #CECECE
+  
+
+
+
+  
+  
+
+@keyframes spin 
+  0% { transform: rotate(0deg); }
+  
+  100% { transform: rotate(-360deg); }
+
+@keyframes spin1 
+  0% { transform: rotate(0deg); }
+  
+  100% { transform: rotate(360deg); }
+
+
+/*--------------------like button--------------------------------*/
+@mixin button
+    color: #ffffff
+    background: linear-gradient(to bottom right, $Secondaire, $Primaire)
+    padding: 15px 20px
+    border: none;
+    border-radius: 25px;
+    box-shadow: 0px 2px 5px 0px #CECECE 
+    margin: 17px 75px 60px 75px
+    
+/*-------------------------heart-color-transition-------------------------------------------*/
+@mixin heartcolor
+    -webkit-text-stroke: 0.7px black;
+    cursor: pointer;
+    font-size: 35px;
+    align-self: center;  
+    background: -webkit-linear-gradient($Primaire, $Secondaire);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 100% 0%;
+    transition: background-size .5s, color .5s;
+@mixin hearttransition
+    transition: all 0.8s 0s ease;
+    background-size: 100% 100%;
+    -webkit-text-stroke: 0.5px white;
