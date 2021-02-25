@@ -233,41 +233,71 @@
 
                 div
                     display: grid
-                    grid-template-columns: 1fr 50px 60px
+                    /*grid-template-columns: 1fr 150px
                     grid-template-rows: 1fr 1fr 
                     background-color: #FFFFFF
                     border-radius: 15px
                     padding-left: 11px
+                    padding-right: 0px
                     box-shadow: 0px 2px 5px 0px #CECECE
+                    /*height: 74px
+                    overflow: hidden;
                     
                     h3
+            
                         grid-column: 1/2
                         grid-row: 1/2
                         margin-bottom: 0px
+                        text-overflow: ellipsis;
+                        overflow: hidden;
+                        white-space: nowrap;
                     p
+                        
                         grid-column: 1/2
                         grid-row: 2/3
                         margin-top: 0px
-                    .prix
-                        position: relative
-                        float: right
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                        overflow: hidden;
+                    span
                         grid-column: 2/3
-                        grid-row: 2/3
-                        margin: 0px auto auto auto
-                    i
-                        
-                        /*display: none
-                        grid-column: 3/4
                         grid-row: 1/3
-                        /*margin: auto
-                        padding: 23px
-                        justify-self: center
-                        align-self: center
-                        background-color: $Tertiaire
-                        color: #FFFFFF
-                        border-top-right-radius: 15px;
-                        border-bottom-right-radius: 15px;
-                        animation: roll-in-right 0.6s ease-out both;
+                        display: flex
+                        justify-content: flex-end   
+                        margin: 0px
+                        padding: 0px
+                        .prix
+                            margin: 50px 20px 10px 20px
+                        .bicon
+                            display: flex
+                            padding: 0px
+                            border-radius: 0px
+                            box-shadow: inherit
+                            background-color: $Tertiaire
+                            justify-content: center
+                            .icon
+                                display: flex
+                                place-self: center
+                                padding: 0px
+                                margin: 0px
+                                justify-content: center              
+                
+                input
+                    display: none
+                    &:checked+label 
+                        .icon
+                            @include cercletransition            
+                label
+                    .icon
+                        @include cerclecolor
+                    &:hover
+                        .icon
+                            @include cercletransition
+                            
+                                
+                    
+
+
                     
                         
                         
@@ -300,3 +330,5 @@
                 .icon2
                     padding-right: 5px
                     
+
+      
