@@ -19,11 +19,11 @@
     
 
 #logospiner
-    display: grid;
-    height: 16px
-    grid-column: 1/2
-    grid-row: 1/2
-    margin: auto
+  display: grid;
+  height: 16px
+  grid-column: 1/2
+  grid-row: 1/2
+  margin: auto
 
 .overlay__wrapper 
   width: 100%;
@@ -119,3 +119,71 @@
     transition: all 0.8s 0s ease;
     background-size: 100% 100%;
     -webkit-text-stroke: 0.5px white;
+
+/*------------------------------maingrid-----------------------------*/
+/*-----------------------------progressive appearance----------------*/
+@mixin choice 
+  animation: progressive  1s;
+  animation-direction: alternate;
+  animation-fill-mode: backwards;
+
+@keyframes progressive 
+  0% 
+    transform: translateY(50px);
+    opacity: 0;
+    transition: all 1s ease-in;    
+  
+  100% 
+    transform: translateY(0px);
+    opacity: 1;
+    transition: all 1s ease-in;
+
+.choice1
+  @include choice
+  animation-delay: 0.5s;
+.choice2
+  @include choice
+  animation-delay: 1s;
+.choice3
+  @include choice
+  animation-delay: 1.5s;
+.choice4
+  @include choice
+  animation-delay: 2s;
+.choice5
+  @include choice
+  animation-delay: 2.5s;
+.choice6
+  @include choice
+  animation-delay: 3s;
+.choice7
+  @include choice
+  animation-delay: 3.5s;
+.choice8
+  @include choice
+  animation-delay: 4s;
+.choice9
+  @include choice
+  animation-delay: 4.5s;
+.choice10
+  @include choice
+  animation-delay: 5s;
+.menugrups h2
+  @include choice
+
+/*-------------------------choice-transition-------------------------------------------*/
+@mixin cerclecolor
+  position: relative
+  font-size: 20px
+  color: #FFFFFF
+  width: 0px
+  transition: width 0.5s ease;
+  
+  
+  
+  
+@mixin cercletransition
+  width: 60px;
+  transition: width 
+  transition: all 0.5s ease;
+  transform: rotate(-360deg)
