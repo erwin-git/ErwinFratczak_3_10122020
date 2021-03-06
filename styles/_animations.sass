@@ -6,25 +6,18 @@
   bottom: 0;
   right: 0;
   animation: start 3s 
-
   visibility: hidden
   background: #f6f6f6
   animation-timing-function: steps(1, end);
-
-
-
 @keyframes start 
   from {visibility: visible}
   to {visibility: hidden}
-    
-
 #logospiner
   display: grid;
   height: 16px
   grid-column: 1/2
   grid-row: 1/2
   margin: auto
-
 .overlay__wrapper 
   width: 100%;
   height: 100%;
@@ -32,7 +25,6 @@
   display: grid
   justify-content: center
   align-items: center
-    
 .overlay__spinner1 
   grid-column: 1/2
   grid-row: 1/2
@@ -46,7 +38,6 @@
   opacity: 90%;
   transition: visibility 0s 6s
   box-shadow: inset 0px 2px 5px 0px #CECECE
-  
 .overlay__spinner2 
   grid-column: 1/2
   grid-row: 1/2
@@ -60,7 +51,6 @@
   opacity: 90%;
   transition: visibility 0s 6s
   box-shadow: inset 0px 2px 5px 0px #CECECE
-
 .overlay__spinner3 
   grid-column: 1/2
   grid-row: 1/2
@@ -74,24 +64,12 @@
   opacity: 90%;
   transition: visibility 0s 6s
   box-shadow: inset 0px 2px 5px 0px #CECECE
-  
-
-
-
-  
-  
-
 @keyframes spin 
   0% { transform: rotate(0deg); }
-  
   100% { transform: rotate(-360deg); }
-
 @keyframes spin1 
   0% { transform: rotate(0deg); }
-  
   100% { transform: rotate(360deg); }
-
-
 /*--------------------like button--------------------------------*/
 @mixin button
     color: #ffffff
@@ -101,12 +79,9 @@
     border-radius: 25px;
     box-shadow: 0px 2px 5px 0px #CECECE 
     margin: 17px 75px 60px 75px
-    
     &:hover
       filter: brightness(1.20);
       box-shadow: 0px 2px 5px 0px #4d4d4d 
-      
-    
 /*-------------------------heart-color-transition-------------------------------------------*/
 @mixin heartcolor
     -webkit-text-stroke: 0.7px black;
@@ -124,25 +99,21 @@
     transition: all 0.8s 0s ease;
     background-size: 100% 100%;
     -webkit-text-stroke: 0.5px white;
-
 /*------------------------------maingrid-----------------------------*/
 /*-----------------------------progressive appearance----------------*/
 @mixin choice 
   animation: progressive  1s;
   animation-direction: alternate;
   animation-fill-mode: backwards;
-
 @keyframes progressive 
   0% 
     transform: translateY(50px);
     opacity: 0;
     transition: all 1s ease-in;    
-  
   100% 
     transform: translateY(0px);
     opacity: 1;
     transition: all 1s ease-in;
-
 .choice1
   @include choice
   animation-delay: 0.5s;
@@ -175,7 +146,6 @@
   animation-delay: 5s;
 .menugrups h2
   @include choice
-
 /*-------------------------choice-transition-------------------------------------------*/
 @mixin cerclecolor
   position: relative
@@ -183,10 +153,6 @@
   color: #FFFFFF
   width: 0px
   transition: width 0.5s ease;
-  
-  
-  
-  
 @mixin cercletransition
   width: 60px;
   transition: width 
