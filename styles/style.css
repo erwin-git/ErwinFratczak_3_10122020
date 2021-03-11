@@ -1855,7 +1855,7 @@ footer a {
     white-space: nowrap;
     overflow: hidden;
   }
-  .menugrid main .menugrups div span {
+  .menugrid main .menugrups div label {
     -ms-grid-column: 2;
     -ms-grid-column-span: 1;
     grid-column: 2/3;
@@ -1871,10 +1871,10 @@ footer a {
     margin: 0px;
     padding: 0px;
   }
-  .menugrid main .menugrups div span .prix {
+  .menugrid main .menugrups div label .prix {
     margin: 50px 20px 10px 20px;
   }
-  .menugrid main .menugrups div span .bicon {
+  .menugrid main .menugrups div label .bicon {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1887,7 +1887,7 @@ footer a {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .menugrid main .menugrups div span .bicon .icon {
+  .menugrid main .menugrups div label .bicon .icon {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2838,7 +2838,7 @@ footer a {
     white-space: nowrap;
     overflow: hidden;
   }
-  .menugrid main .menugrups div span {
+  .menugrid main .menugrups div label {
     -ms-grid-column: 2;
     -ms-grid-column-span: 1;
     grid-column: 2/3;
@@ -2854,10 +2854,10 @@ footer a {
     margin: 0px;
     padding: 0px;
   }
-  .menugrid main .menugrups div span .prix {
+  .menugrid main .menugrups div label .prix {
     margin: 50px 20px 10px 20px;
   }
-  .menugrid main .menugrups div span .bicon {
+  .menugrid main .menugrups div label .bicon {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2870,7 +2870,7 @@ footer a {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .menugrid main .menugrups div span .bicon .icon {
+  .menugrid main .menugrups div label .bicon .icon {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
