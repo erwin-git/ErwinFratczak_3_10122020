@@ -874,7 +874,7 @@ footer a {
     width: 9%;
     border-bottom: solid 3px #99E2D0;
   }
-  .menugrid main .menugrups div {
+  .menugrid main .menugrups span {
     display: -ms-grid;
     display: grid;
     -ms-grid-rows: 1fr 1fr;
@@ -887,7 +887,7 @@ footer a {
             box-shadow: 0px 2px 5px 0px #CECECE;
     overflow: hidden;
   }
-  .menugrid main .menugrups div h3 {
+  .menugrid main .menugrups span h3 {
     -ms-grid-column: 1;
     -ms-grid-column-span: 1;
     grid-column: 1/2;
@@ -899,7 +899,7 @@ footer a {
     overflow: hidden;
     white-space: nowrap;
   }
-  .menugrid main .menugrups div p {
+  .menugrid main .menugrups span p {
     -ms-grid-column: 1;
     -ms-grid-column-span: 1;
     grid-column: 1/2;
@@ -911,7 +911,7 @@ footer a {
     white-space: nowrap;
     overflow: hidden;
   }
-  .menugrid main .menugrups div span {
+  .menugrid main .menugrups span span {
     -ms-grid-column: 2;
     -ms-grid-column-span: 1;
     grid-column: 2/3;
@@ -926,11 +926,13 @@ footer a {
             justify-content: flex-end;
     margin: 0px;
     padding: 0px;
+    -webkit-box-shadow: none;
+            box-shadow: none;
   }
-  .menugrid main .menugrups div span .prix {
+  .menugrid main .menugrups span span .prix {
     margin: 50px 20px 10px 20px;
   }
-  .menugrid main .menugrups div span .bicon {
+  .menugrid main .menugrups span span .bicon {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -943,7 +945,7 @@ footer a {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .menugrid main .menugrups div span .bicon .icon {
+  .menugrid main .menugrups span span .bicon .icon {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
