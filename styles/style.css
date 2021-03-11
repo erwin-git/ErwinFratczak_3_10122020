@@ -19,7 +19,7 @@
   font-family: Shrikhand;
 }
 
-.accueilgrid h1, p, button, h2, h3, dd, h4, h5, h6 {
+.accueilgrid h1, p, button, h2, h3, dd, h4, h5, h6, .prix {
   font-family: Roboto;
 }
 
@@ -874,7 +874,7 @@ footer a {
     width: 9%;
     border-bottom: solid 3px #99E2D0;
   }
-  .menugrid main .menugrups span {
+  .menugrid main .menugrups label {
     display: -ms-grid;
     display: grid;
     -ms-grid-rows: 1fr 1fr;
@@ -887,7 +887,7 @@ footer a {
             box-shadow: 0px 2px 5px 0px #CECECE;
     overflow: hidden;
   }
-  .menugrid main .menugrups span h3 {
+  .menugrid main .menugrups label h3 {
     -ms-grid-column: 1;
     -ms-grid-column-span: 1;
     grid-column: 1/2;
@@ -899,7 +899,7 @@ footer a {
     overflow: hidden;
     white-space: nowrap;
   }
-  .menugrid main .menugrups span p {
+  .menugrid main .menugrups label p {
     -ms-grid-column: 1;
     -ms-grid-column-span: 1;
     grid-column: 1/2;
@@ -911,7 +911,7 @@ footer a {
     white-space: nowrap;
     overflow: hidden;
   }
-  .menugrid main .menugrups span span {
+  .menugrid main .menugrups label span {
     -ms-grid-column: 2;
     -ms-grid-column-span: 1;
     grid-column: 2/3;
@@ -929,10 +929,10 @@ footer a {
     -webkit-box-shadow: none;
             box-shadow: none;
   }
-  .menugrid main .menugrups span span .prix {
+  .menugrid main .menugrups label span .prix {
     margin: 50px 20px 10px 20px;
   }
-  .menugrid main .menugrups span span .bicon {
+  .menugrid main .menugrups label span .bicon {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -945,7 +945,7 @@ footer a {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .menugrid main .menugrups span span .bicon .icon {
+  .menugrid main .menugrups label span .bicon .icon {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
